@@ -1,7 +1,7 @@
 public class Studente {
-    String firstName;
-    String lastName;
-    String ID;
+  private  String firstName;
+  private String lastName;
+  private  String ID;
 
     public Studente(String firstName, String lastName, String ID){
         this.firstName = firstName;
@@ -9,6 +9,27 @@ public class Studente {
         this.ID = ID;
     };
     
+    @Override
+    public String toString(){
+        String datiStudente = "Students data: "+ firstName + ", "+ lastName + " ," + ID;
+        return datiStudente;
+    };
+
+    public String getFirstName(){
+        return firstName;
+    };
+
+    public String getlastName(){
+        return lastName;
+    };
+
+    public String ID(){
+        return ID;
+    };
+
+    public void setFirstName(String firstName){
+        this.firstName = firstName;
+    }
 }
 
 
