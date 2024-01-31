@@ -1,24 +1,34 @@
 public class Studente {
-    String firstName;
-    String lastName;
-    String ID;
+    private  String firstName;
+    private String lastName;
+    private  String ID;
 
     public Studente(String firstName, String lastName, String ID){
         this.firstName = firstName;
         this.lastName = lastName;
         this.ID = ID;
     };
-    
+
+    @Override
+    public String toString(){
+        String datiStudente = "Students data: "+ firstName + ", "+ lastName + " ," + ID;
+        return datiStudente;
+    };
+    //dichiaro getter e setter
+    public String getFirstName(){
+        return firstName;
+    };
+
+    public String getLastName(){
+        return lastName;
+    };
+
+    public String ID(){
+        return ID;
+    };
+
+    public void setFirstName(String firstName){
+        this.firstName = firstName;
+    }
 }
 
-
-
-
-
-
-
-
-//  Scrivere un programma che contenga una classe che definisce uno Studente che abbia come proprietà nome, 
-//cognome ed identificativo.
-//  Per questa classe saranno necessari i metodi accessori (getters e setters) ed un costruttore.
-// Nel main dichiarare un oggetto di tipo Studente.
