@@ -20,7 +20,7 @@ public class HashSetTre {
 
     }
     public static HashSet<String> stringaElementi() {
-        HashSet<String> elements = new HashSet<String>();
+        HashSet<String> elements = new HashSet<>();
         elements.add("primo elemento");
         elements.add("secondo elemento");
         elements.add("terzo elemento");
